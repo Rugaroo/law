@@ -224,6 +224,7 @@ section {
   background: linear-gradient( rgba(19, 19, 19, 0.5), rgba(14, 14, 14, 1) ), url(../img/DSC_5528.jpg);
  background-size: cover;
  background-position: 0% 20%;
+ background-attachment:fixed;
  height: 100vh;
   
 }
