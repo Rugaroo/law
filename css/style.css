@@ -184,7 +184,7 @@ section {
 .about .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -215,12 +215,13 @@ section {
   background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   color: #1f1f1f;
+  margin: 0 auto;
 }
 
 .law {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: linear-gradient( rgba(19, 19, 19, 0.5), rgba(14, 14, 14, 1) ), url(../img/DSC_55862.jpg);
+  background: linear-gradient( rgba(19, 19, 19, 0.5), rgba(14, 14, 14, 1) ), url(../img/DSC_5528.jpg);
  background-size: cover;
  background-position: 0% 20%;
  height: 100vh;
@@ -237,9 +238,9 @@ section {
   justify-content: space-between;
 }
 
-.law-descr {
+/* .law-descr {
   width: 50%;
-}
+} */
 
 .law-descr .section-heading {
   font-weight: normal;
@@ -279,6 +280,10 @@ section {
   color: #ffffff;
   line-height: 1.5;
 }
+form {
+  display: flex;
+  align-items: center;
+}
 .input {
   width: 250px;
   height: 60px;
@@ -287,7 +292,7 @@ section {
   border: 1px solid #eeb929;
   border-radius: 2px;
   outline: none;
-  margin-bottom: 40px;
+  
 }
 
 .input-btn {
@@ -542,7 +547,6 @@ section {
   font-size: 18px;
   transition: 0.5s;
   box-shadow: 0 6.666666666666667px 20px 0px rgba(0, 0, 0, 0.1);
-  font-weight: 700;
   font-family: 'Playfair Display', serif;
 
 }
