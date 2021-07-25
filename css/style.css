@@ -61,6 +61,7 @@ section {
   font-size: 30px;
   line-height: 50px;
   color: #353535;
+  border-bottom: 2px solid #E3E3E3;
 
 }
 
@@ -213,7 +214,7 @@ section {
 .law {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #0e0e0e;
+  background: linear-gradient( rgba(19, 19, 19, 0.2), rgba(14, 14, 14, 1) ), url(../img/background.jpg);
 
 }
 
@@ -237,6 +238,7 @@ section {
   text-align: left;
   letter-spacing: 1px;
   color: #ffffff;
+  border-bottom: none;
 }
 .law-text-zip {
   display: flex;
@@ -298,6 +300,7 @@ section {
 }
 .stages .section-heading {
   color: #f4f4f4;
+  border-bottom: 2px solid #fac636;
 }
 .stages-list {
   display: grid;
@@ -382,6 +385,34 @@ section {
 }
 .noservice-list li {
   margin-bottom: 10px;
+}
+.company {
+  background: #383535;
+  color: #ffffff;
+}
+.company .section-heading {
+  display: none;
+}
+.company-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.company-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.company-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  border-bottom: 2px solid #fac636;
+  margin-bottom: 40px;
+  line-height: 40px;
+}
+.company-text {
+  text-align: right;
+  max-width: 500px;
 }
 .results {
   background: rgb(247, 247, 247);
@@ -474,7 +505,7 @@ section {
 }
 
 .questions {
-  background: #0e0e0e;
+  background: #383535;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -638,6 +669,7 @@ background: #ffffff;
   font-family: 'Playfair Display', serif;
   margin-bottom: 15px;
   color: #eeb929;
+  border-bottom: 1px solid #fac636;
 }
 
 .footer-link {
