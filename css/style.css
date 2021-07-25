@@ -214,8 +214,16 @@ section {
 .law {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: linear-gradient( rgba(19, 19, 19, 0.2), rgba(14, 14, 14, 1) ), url(../img/background.jpg);
+  background: linear-gradient( rgba(19, 19, 19, 0), rgba(14, 14, 14, 1) ), url(../img/DSC_5528.jpg);
+ background-size: cover;
+ background-position: top;
+ height: 100vh;
+  
+}
+.law .container {
+  
 
+ 
 }
 
 .half-container {
