@@ -228,14 +228,17 @@ section {
  height: 100vh;
   
 }
-
+.law .container {
+  height: 100%;
+}
 
 .half-container {
   position: relative;
   margin: 0 auto;
   max-width: 1136px;
+  height: 100%;
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
 }
 
@@ -251,12 +254,16 @@ section {
   letter-spacing: 1px;
   color: #ffffff;
   border-bottom: none;
+  margin-bottom: 100px;
   
 }
 .law-text-zip {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+}
+.law-text-zip:last-of-type {
+  margin-bottom: 100px;
 }
 .law-text-zip img {
   margin-right: 10px;
@@ -276,6 +283,7 @@ section {
   margin-bottom: 0px;
 }
 .law-text-spec {
+  font-family: 'Playfair Display', serif;
   margin-top: 20px;
   font-size: 22px;
   color: #ffffff;
