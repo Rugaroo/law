@@ -592,7 +592,7 @@ form {
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   margin-bottom: 10px;
-  border: 1px solid rgb(228, 227, 227);
+  /* border: 1px solid rgb(228, 227, 227); */
   box-shadow: 0 6.666666666666667px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .certificates .section-heading {
