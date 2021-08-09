@@ -351,7 +351,7 @@ form {
 
 .stages {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/shutterstock_625537535_copy.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/shutterstock_625537535_copy.jpg); */
   /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(209, 209, 209, 0.5)), url(../img/depositphotos_40189775-stock-photo-yellow-abstract-background.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
