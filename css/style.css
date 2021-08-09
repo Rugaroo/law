@@ -37,6 +37,7 @@ section {
 }
 
 .wide-container {
+  position: relative;
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
@@ -95,9 +96,8 @@ section {
 .subheader-btn {
   padding: 15px;
   border: none;
-  background: linear-gradient(
-    0deg
-    ,#d89e33,#f0d797);;
+  background: linear-gradient(0deg, #d89e33, #f0d797);
+  ;
   /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
   border-radius: 5px;
   margin-left: 20px;
@@ -147,7 +147,29 @@ section {
 }
 
 .header-adress {
-  font-size: 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+
+}
+.header-adress-branch:first-child {
+  padding-right: 15px;
+}
+.header-adress-zip {
+  position: relative;
+  padding-left: 15px;
+}
+
+.header-adress-zip::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  left: 5%;
+  height: 100%;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+
 }
 
 .burger-overlay {
@@ -214,9 +236,8 @@ section {
   border-radius: 2px;
   border: none;
   border-radius: 2px;
-  background: linear-gradient(
-    0deg
-    ,#d89e33,#f0d797);;
+  background: linear-gradient(0deg, #d89e33, #f0d797);
+  ;
   /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
   color: #1f1f1f;
@@ -226,13 +247,14 @@ section {
 .law {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: linear-gradient( rgba(19, 19, 19, 0.5), rgba(14, 14, 14, 1) ), url(../img/DSC_5528.jpg);
- background-size: cover;
- background-position: 0% 20%;
- background-attachment:fixed;
- height: 100vh;
-  
+  background: linear-gradient(rgba(19, 19, 19, 0.5), rgba(14, 14, 14, 1)), url(../img/DSC_5528.jpg);
+  background-size: cover;
+  background-position: 0% 20%;
+  background-attachment: fixed;
+  height: 100vh;
+
 }
+
 .law .container {
   height: 100%;
 }
@@ -243,7 +265,7 @@ section {
   max-width: 1136px;
   height: 100%;
   display: flex;
-  
+
   justify-content: space-between;
 }
 
@@ -260,19 +282,23 @@ section {
   color: #ffffff;
   border-bottom: none;
   margin-bottom: 100px;
-  
+
 }
+
 .law-text-zip {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
 }
+
 .law-text-zip:last-of-type {
   margin-bottom: 100px;
 }
+
 .law-text-zip img {
   margin-right: 10px;
 }
+
 .law-img {
   position: absolute;
   right: 0;
@@ -287,6 +313,7 @@ section {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 .law-text-spec {
   font-family: 'Playfair Display', serif;
   margin-top: 20px;
@@ -294,10 +321,12 @@ section {
   color: #ffffff;
   line-height: 1.5;
 }
+
 form {
   display: flex;
   align-items: center;
 }
+
 .input {
   width: 250px;
   height: 60px;
@@ -306,42 +335,46 @@ form {
   border: 1px solid #eeb929;
   border-radius: 2px;
   outline: none;
-  
+
 }
 
 .input-btn {
   height: 60px;
   padding: 10px 20px;
   border: none;
-  background: linear-gradient(
-    0deg
-    ,#d89e33,#f0d797);;
+  background: linear-gradient(0deg, #d89e33, #f0d797);
+  ;
   border-radius: 5px;
   font-size: 18px;
-  
+
 }
 
 .stages {
   position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/shutterstock_625537535_copy.jpg);
   /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(209, 209, 209, 0.5)), url(../img/depositphotos_40189775-stock-photo-yellow-abstract-background.jpg); */
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px;
   z-index: 10;
 }
+
 .stages .section-heading {
-  background: linear-gradient(0deg,#d89e33,#f0d797);
+  background: linear-gradient(0deg, #d89e33, #f0d797);
   color: #000000;
   border-bottom: 2px solid #d3b868;
 }
+
 .stages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
+
 .stages .bankrot-text {
   color: #ffffff;
 }
+
 .stage {
   position: relative;
   display: flex;
@@ -364,20 +397,32 @@ form {
   font-weight: 700;
 }
 
+.reason-list li {
+  color: #ffffff;
+
+}
+
+.reason-list li:last-child {
+  margin-bottom: 50px;
+}
+
 .bankrot {
   background: rgb(247, 247, 247);
 }
+
 .bankrot-text {
   color: #f4f4f4;
   margin-bottom: 40px;
   text-align: justify;
 }
+
 .bankrot .bankrot-text {
   margin-bottom: 40px;
   text-align: justify;
   color: #2c2b2b;
-  
+
 }
+
 .views {
   background: rgb(247, 247, 247);
 }
@@ -414,29 +459,36 @@ form {
 .card-text {
   font-size: 18px;
 }
+
 .noservice {
   background: rgb(247, 247, 247);
 }
+
 .noservice-list li {
   margin-bottom: 10px;
 }
+
 .company {
   background: rgb(17, 17, 17);
   color: #ffffff;
 }
+
 .company .section-heading {
   display: none;
 }
+
 .company-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
+
 .company-descr {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .company-title {
   font-family: 'Playfair Display', serif;
   font-size: 25px;
@@ -444,12 +496,14 @@ form {
   margin-bottom: 40px;
   line-height: 40px;
 }
+
 .company-text {
   text-align: right;
   max-width: 500px;
 }
+
 .results {
-  background: rgb(247, 247, 247);
+  background: url(../img/1617812512_6-p-belii-mramor-fon-6.jpg);
 }
 
 .results-list {
@@ -464,7 +518,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(0deg,#d89e33,#f0d797);
+  background: linear-gradient(0deg, #d89e33, #f0d797);
   border: 1px solid #ece9e9;
   padding: 20px 15px;
   box-shadow: 0 6.666666666666667px 20px 0px rgba(0, 0, 0, 0.1);
@@ -544,6 +598,7 @@ form {
   background-size: cover;
   background-position: center;
 }
+
 .questions .section-heading {
   color: #d3b868;
   border-bottom: 1px solid #d3b868;
@@ -557,7 +612,7 @@ form {
 }
 
 .accordion {
-  background: linear-gradient(0deg,#d89e33,#f0d797);
+  background: linear-gradient(0deg, #d89e33, #f0d797);
   color: #000000;
   cursor: pointer;
   padding: 16px;
@@ -601,12 +656,15 @@ form {
   /* border: 1px solid rgb(228, 227, 227); */
   box-shadow: 0 6.666666666666667px 20px 0px rgba(0, 0, 0, 0.1);
 }
+
 .certificates .section-heading {
   color: #353535;
 }
+
 .certificates {
   background: rgb(247, 247, 247);
 }
+
 .slider,
 .c-carousel {
   display: flex;
@@ -644,9 +702,11 @@ form {
 .c-carousel .slick-arrow.slick-disabled {
   opacity: 0.2;
 }
+
 .contacts {
-background: #ffffff;  
+  background: #ffffff;
 }
+
 .contacts-zipper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -715,4 +775,98 @@ background: #ffffff;
   font-size: 16px;
   margin-top: 25px;
   color: #e2dede;
+}
+
+/* team */
+.team {
+  background: url(../img/1617812512_6-p-belii-mramor-fon-6.jpg);
+}
+
+.team .section-heading {
+  /* color: #eeb929;
+  border-bottom: 1px solid #fac636; */
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edcc6d;
+}
+
+.team-img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.team-descr {
+  background: #edcc6d;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.team-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+  line-height: 1.5;
+
+}
+
+.team-card-text {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* specialist */
+.expert {
+  background: #212121;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.expert-title {
+  color: #edcc6d;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid #edcc6d;
+  padding-bottom: 5px;
+}
+
+.expert-container {
+  display: flex;
+}
+
+.expert-img {
+  object-fit: cover;
+  width: 250px;
+  height: 350px;
+  margin-right: 50px;
+}
+
+.position {
+  margin-bottom: 10px;
+}
+
+.expert-subtitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.expert-text {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.expert-text span {
+  color: #edcc6d;
 }
