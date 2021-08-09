@@ -463,7 +463,9 @@ form {
 .noservice {
   background: rgb(247, 247, 247);
 }
-
+.noservice .bankrot-text {
+  color: #2c2b2b;
+}
 .noservice-list li {
   margin-bottom: 10px;
 }
