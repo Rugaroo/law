@@ -1166,9 +1166,33 @@ form {
 @media (max-width: 320px) {
   body {
     font-size: 16px;
+    line-height: 1.5;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .section-heading {
     font-size: 25px;
+    line-height: 1.5;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .subheader {
+    justify-content: flex-start;
+  }
+  .subheader-btn {
+    margin-left: 0;
+  }
+  .header-adress {
+    justify-content: flex-start;
+  }
+  .header-adress-zip {
+    padding-left: 0;
+  }
+  .header-adress-branch {
+    margin-bottom: 10px;
   }
   .burger {
     left: 280px;
@@ -1199,5 +1223,11 @@ form {
   }
   .contacts-title {
     font-size: 20px;
+  }
+  .expert {
+    font-size: 16px;
+  }
+  .expert-title {
+    font-size: 25px;
   }
 }
