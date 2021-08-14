@@ -591,7 +591,9 @@ form {
   font-weight: 400;
   margin-bottom: 10px;
 }
-
+.rev {
+  line-height: 1.5;
+}
 .review-result-zipper {
   display: flex;
   align-items: center;
@@ -1168,6 +1170,10 @@ form {
     font-size: 16px;
     line-height: 1.5;
   }
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -1175,9 +1181,10 @@ form {
   .section-heading {
     font-size: 25px;
     line-height: 1.5;
+    padding: 5px;
   }
   .logo {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .subheader {
     justify-content: flex-start;
