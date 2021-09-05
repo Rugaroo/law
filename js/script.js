@@ -60,3 +60,10 @@ $('.c-carousel').slick({
     }
   ]
 });
+
+$(".subheader-btn, .about-btn").on('click', function() {
+  $(".custom-model-main").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay, .popup-btn").click(function(){
+  $(".custom-model-main").removeClass('model-open');
+});

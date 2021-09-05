@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <title>Банкрот Бутик</title>
+  <title>Арс Банкрот - О нас</title>
 </head>
 
 <body>
@@ -31,11 +32,11 @@
           <nav class="nav">
             <ul class="nav-list">
               
-              <li class="nav-item"><a href="#" class="nav-link">Банкротство</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Принудительное банкротство</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Банкротство</a></li>
+              <li class="nav-item"><a href="prinuditelnoe.php" class="nav-link">Принудительное банкротство</a></li>
               <li class="nav-item"><a href="team.html" class="nav-link">О нас</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Полезная информация</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+              <li class="nav-item"><a href="info.html" class="nav-link">Полезная информация</a></li>
+              <li class="nav-item"><a href="index.html#contacts" class="nav-link">Контакты</a></li>
               
             </ul>
           </nav>
@@ -59,6 +60,22 @@
         </button>
       </div>
       <div class="burger-overlay"></div>
+      
+      <div class="custom-model-main">
+        <div class="custom-model-inner">
+          <div class="close-btn">×</div>
+          <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <form class="popup" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <input class="input" type="text" name="name" placeholder="Ваше имя">
+                <input class="input" type="text" name="email" placeholder="Номер телефона">
+                <input class="input-btn popup-btn" value="Получить консультацию" type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bg-overlay"></div>
+      </div>
 
     </div>
   </header>
@@ -68,9 +85,31 @@
       <div class="container">
         <h2 class="section-heading">Наши специалисты</h2>
         <div class="team-list">
-          <a href="pages/pozdnyakov.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+            
+            <a href="pages/kruglov.html" class="team-card">
+            <img src="img/portets/crop/SHI_9051.jpg" alt="Круглов" class="team-img">
             <div class="team-descr">
+              <div class="team-card-title">Иван Круглов
+              </div>
+              <div class="team-card-text">Директор по развитию бизнеса</div>
+            </div>
+
+          </a>
+          
+           <a href="pages/bazilevskaya.html" class="team-card">
+            <img src="img/portets/crop/SHI_8960.jpg" alt="Базилевская" class="team-img">
+            <div class="team-descr">
+              <div class="team-card-title">Базилевская Татьяна
+              </div>
+              <div class="team-card-text">Старший Юрист</div>
+            </div>
+
+          </a>
+          
+          <a href="pages/pozdnyakov.html" class="team-card">
+            <img src="img/portets/crop/SHI_9033.jpg" alt="Поздняков" class="team-img">
+            <div class="team-descr">
+                
               <div class="team-card-title">Поздняков Кирилл
               </div>
               <div class="team-card-text">Юрист по банкротству</div>
@@ -79,7 +118,7 @@
           </a>
 
           <a href="pages/polyakov.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+            <img src="img/portets/crop/SHI_9065.jpg" alt="Поляков" class="team-img">
             <div class="team-descr">
               <div class="team-card-title">Поляков Дмитрий
               </div>
@@ -89,9 +128,9 @@
           </a>
 
           <a href="pages/tugolukov.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+            <img src="img/portets/crop/SHI_8985.jpg" alt="Туголуков" class="team-img">
             <div class="team-descr">
-              <div class="team-card-title">Туголуков Рэм Романович
+              <div class="team-card-title">Туголуков Рэм
               </div>
               <div class="team-card-text">Арбитражный управляющий</div>
             </div>
@@ -99,34 +138,48 @@
           </a>
 
           <a href="pages/kiryukhina.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+            <img src="img/portets/crop/SHI_9236.jpg" alt="Кирюхина" class="team-img">
             <div class="team-descr">
-              <div class="team-card-title">Кирюхина Кристина Максимовна
+              <div class="team-card-title">Кирюхина Ксения
               </div>
-              <div class="team-card-text"> </div>
+              <div class="team-card-text">Юрист</div>
             </div>
 
           </a>
 
           <a href="pages/sapegin.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+            <img src="img/portets/crop/SHI_9008.jpg" alt="Сапегин" class="team-img">
             <div class="team-descr">
-              <div class="team-card-title">Сапегин Антон Евгеньевич
+              <div class="team-card-title">Сапегин Антон
               </div>
               <div class="team-card-text">Адвокат</div>
             </div>
 
           </a>
 
-          <a href="pages/bazilevskaya.html" class="team-card">
-            <img src="img/DSC_5586.jpg" alt="" class="team-img">
+         
+          
+          <a href="pages/kurisheva.html" class="team-card">
+            <img src="img/portets/crop/SHI_9210.jpg" alt="Курышева" class="team-img">
             <div class="team-descr">
-              <div class="team-card-title">Базилевская Татьяна
+              <div class="team-card-title">Кристина Курышева
               </div>
-              <div class="team-card-text">Старший Юрист</div>
+              <div class="team-card-text">Арбитражный управляющий</div>
             </div>
 
           </a>
+          
+          <a href="#" class="team-card">
+            <img src="img/portets/crop/SHI_9102.jpg" alt="Леванова" class="team-img">
+            <div class="team-descr">
+              <div class="team-card-title">Нюта Леванова
+              </div>
+              <div class="team-card-text">Ассистент руководителя</div>
+            </div>
+
+          </a>
+          
+          
 
           
         </div>
@@ -140,21 +193,21 @@
       <div class="links-menu">
         <div class="links-title">О компании</div>
         <a href="#" class="footer-link"></a>
-        <a href="#" class="footer-link">Отзывы</a>
-        <a href="#" class="footer-link">Контакты</a>
+        <a href="index.html#results" class="footer-link">Отзывы</a>
+        <a href="index.html#contacts" class="footer-link">Контакты</a>
         <div class="copyright">Все права защищены</div>
       </div>
 
       <div class="links-menu">
         <div class="links-title">Услуги</div>
-        <a href="#" class="footer-link">Банкротство физических лиц</a>
-        <a href="#" class="footer-link">Принудительное банкротство</a>
+        <a href="index.html" class="footer-link">Банкротство физических лиц</a>
+        <a href="prinuditelnoe.php" class="footer-link">Принудительное банкротство</a>
 
       </div>
 
       <div class="links-menu">
         <div class="links-title">Мы в соцсетях</div>
-        <a href="#" class="footer-link">Вконтакте</a>
+        <a href="https://vk.com/arsbankrot" class="footer-link">Вконтакте</a>
         <a href="#" class="footer-link">Instagram</a>
       </div>
     </div>

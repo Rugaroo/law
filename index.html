@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap" rel="stylesheet">
@@ -16,13 +17,36 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <title>Банкрот Бутик</title>
+  <title>Арс Банкрот</title>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(84642961, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/84642961" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
   <header class="header">
     <div class="wide-container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
 
         <img src="img/Group_3_1.png" class="logo-img" alt="logo">
       </a>
@@ -31,14 +55,14 @@
           <nav class="nav">
             <ul class="nav-list">
 
-              <li class="nav-item"><a href="#" class="nav-link">Банкротство</a></li>
-              <li class="nav-item"><a href="prinuditelnoe.html" class="nav-link">Принудительное банкротство</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Банкротство</a></li>
+              <li class="nav-item"><a href="prinuditelnoe.php" class="nav-link">Принудительное банкротство</a></li>
               <li class="nav-item"><a href="team.html" class="nav-link">О нас</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Полезная информация</a></li>
+              <li class="nav-item"><a href="info.html" class="nav-link">Полезная информация</a></li>
               <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
             </ul>
           </nav>
-          <button class="subheader-btn">Заказать звонок <br> <span>+7(800)444-15-46</span></button>
+          <button  class="subheader-btn">Заказать звонок <br> <span>+7(800)444-15-46</span></button>
         </div>
         <div class="header-adress">
           <div class="header-adress-branch">г.Москва, ул. Льва Толстого 19/2</div>
@@ -59,58 +83,86 @@
       </div>
       <div class="burger-overlay"></div>
 
+      <div class="custom-model-main">
+        <div class="custom-model-inner">
+          <div class="close-btn">×</div>
+          <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <form class="popup" enctype="multipart/form-data" method="post" id="form"
+                onsubmit="send(event, 'send.php')">
+                <input class="input" type="text" name="name" placeholder="Ваше имя">
+                <input class="input" type="text" name="email" placeholder="Номер телефона">
+                <input class="input-btn popup-btn" value="Получить консультацию" type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bg-overlay"></div>
+      </div>
+
     </div>
   </header>
   <main>
     <section class="law">
       <div class="container">
         <div class="half-container">
+          
           <div class="law-descr">
-
-            <h2 class="section-heading">Банкротство - свобода от долгов!</h2>
             <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Проводим аудит и составляем персональную стратегию
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Клиенту назначается персональный юрист
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Оплата в рассрочку
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Банкротство с гарантией
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Работаем со всеми городами РФ
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Предоставление финансового управляющего
-              </p>
-            </div>
-            <div class="law-text-zip">
-              <img src="img/icons/check-solid(1).svg" alt="">
-              <p class="law-text">Избавим от назойливых коллекторов
-              </p>
+              <h2 class="section-heading">Банкротство - свобода от долгов!</h2>
+              <p class="law-text-spec">СПЕЦИАЛИЗИРУЕМСЯ ТОЛЬКО НА СПИСАНИИ ДОЛГОВ</p>
             </div>
 
-            <p class="law-text-spec">СПЕЦИАЛИЗИРУЕМСЯ ТОЛЬКО НА СПИСАНИИ ДОЛГОВ</p>
+            <div class="law-text-zip">
+              <div class="law-card">
+                <div class="law-card-title">Честно</div>
+                <div class="law-card-text">Мы не обманываем с ценой: не называем заниженные суммы и не затягиваем
+                  процедуру для своей выгоды.  Наши
+                  эксперты замотивированы только на быстрое положительное завершение дел</div>
+              </div>
 
-            <form action="#">
-              <input class="input" type="text" name="input" placeholder="Ваше имя">
-              <input class="input" type="text" name="input" placeholder="Номер телефона">
-              <button class="input-btn">Получить консультацию</button>
-            </form>
+              <div class="law-card">
+                <div class="law-card-title">24/7</div>
+                <div class="law-card-text">Всю информацию по Вашему делу Вы видите онлайн в приложении и можете узнать круглосуточно, позвонив по телефону. Ваши вопросы не останутся без ответа. Реальная поддержка 24 часа 7 дней в неделю</div>
+              </div>
+
+              <div class="law-card">
+                <div class="law-card-title">Гарантия</div>
+                <div class="law-card-text">Для Вашего спокойствия мы гарантируем возврат оплаты в случае отсутствия списания долгов после процедуры. Но, если мы взялись за дело, мы всегда добиваемся результата</div>
+              </div>
+            </div>
+            <div class="law-text-zip">
+              <div class="law-card">
+                <div class="law-card-title">Законно</div>
+                <div class="law-card-text">Компания работает официально и абсолютно прозрачно</div>
+              </div>
+
+              <div class="law-card">
+                <div class="law-card-title">Работаем по РФ</div>
+                <div class="law-card-text">Многолетний опыт помощи гражданам РФ по самым сложным юридическим вопросам позволяет успешно работать на всей территории Российской Федерации</div>
+              </div>
+
+              <div class="law-card">
+                <div class="law-card-title">Рассрочка</div>
+                <div class="law-card-text">Удобные варианты рассрочки. Нет необходимости вносить все средства сразу. Пошаговая оплата - Вы видите качество работы и результат, после чего оплачиваете следующий месяц процедуры</div>
+              </div>
+
+              <div class="law-card">
+                <div class="law-card-title">Профессионально</div>
+                <div class="law-card-text">Перед началом работ Вам подробно объяснят все тонкости процедуры с учетом именно Вашей ситуации, досконально изучив Ваше дело</div>
+              </div>
+            </div>
+            
+            
+
+            
+
+            <button class="about-btn">Списать все долги</button>
+            <!-- <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+              <input class="input" type="text" id="name" name="name" placeholder="Ваше имя">
+              <input class="input" type="text" id="email" name="email" placeholder="Номер телефона">
+              <input class="input-btn" value="Получить консультацию" type="submit">
+            </form> -->
           </div>
 
         </div>
@@ -118,17 +170,64 @@
       </div>
 
     </section>
+
+    <section class="views">
+      <div class="container">
+        <h2 class="section-heading">Какие долги можно списать?</h2>
+        
+        <div class="views-list">
+          <div class="view-card">
+            <div class="card-number">01</div>
+            <div class="card-title">Банковские кредиты и займы</div>
+            <div class="card-text">Помощь в подтверждение неплатежеспособности при выплате кредитов, займов,
+              микрозаймов, задолженностей по кредитным картам, распискам у физических лиц.
+            </div>
+          </div>
+
+          <div class="view-card">
+            <div class="card-number">02</div>
+            <div class="card-title">Долги по предпринимательской деятельности</div>
+            <div class="card-text">Списание долгов по налогам, страховым взносам, обязательным платежам индивидуальных
+              предпринимателей.</div>
+          </div>
+
+          <div class="view-card">
+            <div class="card-number">03</div>
+            <div class="card-title">Задолженности по ЖКХ и налогам</div>
+            <div class="card-text">Списание долгов по ЖКХ, штрафам, пени, неустойкам и другим обязательным платежам.
+            </div>
+          </div>
+
+          <div class="view-card">
+            <div class="card-number">04</div>
+            <div class="card-title">Поручительства по кредитам</div>
+            <div class="card-text">Списание долгов поручителей, если заемщик не выполняет кредитные обязательства.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consult">
+      <div class="container">
+        <div class="form-zipper">
+          <div class="form-description">
+            <div class="form-title">Бесплатная консультация</div>
+            <div class="form-text">Вы можете проконсультироваться с опытными специалистами
+              по списанию долгов
+              абсолютно бесплатно
+              и это вас ни к чему не обязывает</div>
+          </div>
+
+          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+            <input class="input" type="text" id="name" name="name" placeholder="Ваше имя">
+            <input class="input" type="text" id="email" name="email" placeholder="Номер телефона">
+            <input class="input-btn" value="Получить консультацию" type="submit">
+          </form>
+        </div>
+      </div>
+    </section>
     <section class="stages">
       <div class="container">
-        <h2 class="section-heading">Что такое банкротство?</h2>
-        <!-- <div class="bankrot-text">Банкротство - это законная процедура, благодаря которой, каждый человек или компания
-          могут избавиться от долгов.</div> -->
-        <div class="bankrot-text">Банкротство граждан, или иначе, финансовая несостоятельность физических лиц — это
-          единственный доступный на сегодня способ навсегда избавиться от непосильной кредитной нагрузки.</div>
-        <div class="bankrot-text">Право стать банкротом закреплено за гражданами положениями Федерального закона No
-          127-ФЗ, действовать которые начали с 1.10.2015. С этого времени тысячи людей воспользовались своим законным
-          правом и объявили о некредитоспособности, избавившись таким образом от долговых обязательств</div>
-
         <h2 class="section-heading">Этапы процедуры банкротства</h2>
         <div class="stages-list">
           <div class="stage">
@@ -178,43 +277,7 @@
       </div>
     </section>
 
-    <section class="views">
-      <div class="container">
-        <h2 class="section-heading">Какие долги можно списать?</h2>
-        <!-- <p class="views-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-        <div class="views-list">
-          <div class="view-card">
-            <div class="card-number">01</div>
-            <div class="card-title">Банковские кредиты и займы</div>
-            <div class="card-text">Помощь в подтверждение неплатежеспособности при выплате кредитов, займов,
-              микрозаймов, задолженностей по кредитным картам, распискам у физических лиц.
-            </div>
-          </div>
-
-          <div class="view-card">
-            <div class="card-number">02</div>
-            <div class="card-title">Долги по предпринимательской деятельности</div>
-            <div class="card-text">Списание долгов по налогам, страховым взносам, обязательным платежам индивидуальных
-              предпринимателей.</div>
-          </div>
-
-          <div class="view-card">
-            <div class="card-number">03</div>
-            <div class="card-title">Задолженности по ЖКХ и налогам</div>
-            <div class="card-text">Списание долгов по ЖКХ, штрафам, пени, неустойкам и другим обязательным платежам.
-            </div>
-          </div>
-
-          <div class="view-card">
-            <div class="card-number">04</div>
-            <div class="card-title">Поручительства по кредитам</div>
-            <div class="card-text">Списание долгов поручителей, если заемщик не выполняет кредитные обязательства.</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="noservice">
       <div class="container">
         <h2 class="section-heading">Кто не может воспользоваться услугой?</h2>
@@ -228,6 +291,17 @@
             некредитоспособными. Поэтому, перед тем как объявить о своей финансовой несостоятельности, физическим лицам
             следует досконально проверить, не наблюдается ли у них запрещающих проведение банкротства факторов.</li>
         </ul>
+
+      </div>
+    </section>
+    <section class="call">
+      <div class="container">
+        <h2 class="section-heading">Мы поможем Вам наконец избавиться от неподъемных выплат по кредитам, займам и долгам</h2>
+        <div class="call-text">Начать новую жизнь и вернуть уверенность в завтрашнем дне можно и это не трудно!</div>
+        <div class="call-text">
+          Просто позвоните
+          <a class="call-link" href="tel:+78004441546">+7(800)444-15-46</a>
+        </div>
 
       </div>
     </section>
@@ -245,7 +319,7 @@
         </div>
       </div>
     </section>
-    <section class="results">
+    <section id="results" class="results">
       <div class="container">
         <h2 class="section-heading">Отзывы и кейсы</h2>
         <div class="results-list">
@@ -255,10 +329,10 @@
           </div>
 
           <div class="result">
-            
+
             <div class="result-text">Опыт</div>
             <div class="result-number">12 лет</div>
-            
+
           </div>
 
           <div class="result">
@@ -269,18 +343,10 @@
           <div class="result">
             <div class="result-number">98%</div>
             <div class="result-text">довольных клиентов</div>
-            
+
           </div>
 
-          <div class="result">
-            <div class="result-text">Успешно закрытые дела</div>
-            <div class="result-number">100%</div>
-          </div>
 
-          <div class="result">
-            <div class="result-text">Успешно закрытые дела</div>
-            <div class="result-number">100%</div>
-          </div>
         </div>
         <div class="review-list">
 
@@ -288,11 +354,12 @@
             <div class="review-result-zipper">
               <div class="review-results">
                 <div class="review-name">Прокофьева Н В</div>
-                <!-- <div class="review-name-descr">Учитель</div> -->
+                
               </div>
-              <a href="img/case/A40-159598-2018_20190625_Opredelenie.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="img/case/A40-159598-2018_20190625_Opredelenie.pdf" download target="_blank"
+                rel="noopener noreferrer">
                 <img src="img/icons/icons8-link.svg" alt=""></a>
-              <!-- <div class="circle"></div> -->
+              
             </div>
 
             <div class="review-subtitle">Долг до обращения к нам</div>
@@ -302,8 +369,7 @@
               долга</div>
             <div class="review-subtitle">Номер дела</div>
             <div class="review-text">А40-159598/2018</div>
-            <!-- <div class="review-subtitle">Продолжительность процедуры</div>
-            <div class="review-text">7 месяцев от подписания договора до полного списание задолженности</div> -->
+            
             <div class="review-subtitle">Список кредиторов</div>
             <div class="review-text">ПАО "МОСКОВСКИЙ КРЕДИТНЫЙ БАНК" ТСЖ "1-Й ОЧАКОВСКИЙ ПЕРЕУЛОК, 1", ИФНС № 29 ПО Г.
               МОСКВЕ, Переборский Антон Николаевич</div>
@@ -314,16 +380,25 @@
               </div>
               <img src="img/check_circle_outline_black_36dp.svg" alt="done">
             </div>
-            <div class="review-text rev">Проходила процедуру Банкротства в 2019 году.Тяжелая финансовая ситуация привела к необходимости радикального решения вопроса с кредитами, задумалась о прохождении процедуры банкротства, но боялась. После первой же консультации юристы четко ответили на все волнующие меня вопросы, что успокоило меня  придало уверенности, с  того момента ни разу не пожалела о своем решении пройти процедуру Банкротства. Документы для подачи заявления подготовили всего за 2 недели, через полтора месяца уже успешно прошло первое судебное заседание и меня признали банкротом, после чего я была совсем спокойна, ведь мне перестали названивать коллекторы. Спустя несколько месяцев самой процедуры с меня списали все долги, а ведь это больше 2 млн. рублей! Я сэкономила много нервов и денег. Большое спасибо юристам, которые были со мной на связи на протяжении всей процедуры! </div>
+            <div class="review-text rev">Проходила процедуру Банкротства в 2019 году.Тяжелая финансовая ситуация привела
+              к необходимости радикального решения вопроса с кредитами, задумалась о прохождении процедуры банкротства,
+              но боялась. После первой же консультации юристы четко ответили на все волнующие меня вопросы, что
+              успокоило меня придало уверенности, с того момента ни разу не пожалела о своем решении пройти процедуру
+              Банкротства. Документы для подачи заявления подготовили всего за 2 недели, через полтора месяца уже
+              успешно прошло первое судебное заседание и меня признали банкротом, после чего я была совсем спокойна,
+              ведь мне перестали названивать коллекторы. Спустя несколько месяцев самой процедуры с меня списали все
+              долги, а ведь это больше 2 млн. рублей! Я сэкономила много нервов и денег. Большое спасибо юристам,
+              которые были со мной на связи на протяжении всей процедуры! </div>
           </div>
 
           <div class="review">
             <div class="review-result-zipper">
               <div class="review-results">
                 <div class="review-name">Соляников Евгений Александрович</div>
-                <!-- <div class="review-name-descr">Учитель</div> -->
+               
               </div>
-              <a href="img/case/A21-6795-2019_20200630_Opredelenie.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="img/case/A21-6795-2019_20200630_Opredelenie.pdf" download target="_blank"
+                rel="noopener noreferrer">
                 <img src="img/icons/icons8-link.svg" alt=""></a>
             </div>
             <div class="review-subtitle">Долг до обращения к нам</div>
@@ -333,8 +408,7 @@
               долга</div>
             <div class="review-subtitle">Номер дела</div>
             <div class="review-text">А21-6795/2019</div>
-            <!-- <div class="review-subtitle">Продолжительность процедуры</div>
-            <div class="review-text">7 месяцев от подписания договора до полного списание задолженности</div> -->
+            
             <div class="review-subtitle">Список кредиторов</div>
             <div class="review-text">ПАО "Сбербанк России", ООО "ХОУМ КРЕДИТ ЭНД ФИНАНС БАНК"</div>
             <div class="review-result-zipper">
@@ -344,16 +418,21 @@
               </div>
               <img src="img/check_circle_outline_black_36dp.svg" alt="done">
             </div>
-            <div class="review-text rev">Добрый день! Хочу сказать большое спасибо юристам компании "Банкрот Бутик" за высокий профессионализм в работе, за грамотную поддержку на протяжении всей процедуры. Несколько лет не мог выбраться из кредитной кабалы. До конца боялся, что не получится, как оказалось-зря. Признали банкротом и полностью списали все долги по кредитам. Теперь я чувствую себя свободным человеком! Говорят,  после прохождения процедуры банкротства брать кредиты почти сразу, но я пока не решаюсь становиться на этот путь снова, быть свободным от долгов мне нравится больше.</div>
+            <div class="review-text rev">Добрый день! Хочу сказать большое спасибо юристам компании "Арс Банкрот" за
+              высокий профессионализм в работе, за грамотную поддержку на протяжении всей процедуры. Несколько лет не
+              мог выбраться из кредитной кабалы. До конца боялся, что не получится, как оказалось-зря. Признали
+              банкротом и полностью списали все долги по кредитам. Теперь я чувствую себя свободным человеком! Говорят,
+              после прохождения процедуры банкротства брать кредиты почти сразу, но я пока не решаюсь становиться на
+              этот путь снова, быть свободным от долгов мне нравится больше.</div>
 
           </div>
           <div class="review">
             <div class="review-result-zipper">
               <div class="review-results">
                 <div class="review-name">Кирюхин М.К</div>
-                <!-- <div class="review-name-descr">Учитель</div> -->
+               
               </div>
-              <a href="img/case/А40-3071482018-184-224.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="img/case/А40-3071482018-184-224.pdf" download target="_blank" rel="noopener noreferrer">
                 <img src="img/icons/icons8-link.svg" alt=""></a>
             </div>
 
@@ -364,8 +443,7 @@
               долга</div>
             <div class="review-subtitle">Номер дела</div>
             <div class="review-text">А40-307148/2018-184-224</div>
-            <!-- <div class="review-subtitle">Продолжительность процедуры</div>
-            <div class="review-text">7 месяцев от подписания договора до полного списание задолженности</div> -->
+            
             <div class="review-subtitle">Список кредиторов</div>
             <div class="review-text">ПАО «Московский Кредитный Банкт», ПАО «Сбербанк», АО "Альфа Банк", ПАО «ВТБ Банк»,
               ГБУ г.Москвы "Жилищник района Люблино", ИФНС №23</div>
@@ -376,7 +454,13 @@
               </div>
               <img src="img/check_circle_outline_black_36dp.svg" alt="done">
             </div>
-            <div class="review-text rev">Сначала я долго боролся с кредитами своими силами и выплачивал все каждый месяц, как добросовестный гражданин. В какой-то момент понял, что сумма большая и этот круговорот никогда не закончится, ведь из-за высокой процентной ставки банков сумма не уменьшалась. Я понял, что банкротство мой единственный выход, очень устал от постоянных выплат банкам по процентам. Я совсем не жалею о совсем решении, спустя год после завершения процедуры я все так же с уверенностью говорю, что это было правильным решением. Спасибо юристам компании "Банкрот Бутик" за понимание, и квалифицированное решение моей финансовой проблемы.</div>
+            <div class="review-text rev">Сначала я долго боролся с кредитами своими силами и выплачивал все каждый
+              месяц, как добросовестный гражданин. В какой-то момент понял, что сумма большая и этот круговорот никогда
+              не закончится, ведь из-за высокой процентной ставки банков сумма не уменьшалась. Я понял, что банкротство
+              мой единственный выход, очень устал от постоянных выплат банкам по процентам. Я совсем не жалею о совсем
+              решении, спустя год после завершения процедуры я все так же с уверенностью говорю, что это было правильным
+              решением. Спасибо юристам компании "Арс Банкрот" за понимание, и квалифицированное решение моей финансовой
+              проблемы.</div>
           </div>
 
           <div class="review">
@@ -385,7 +469,7 @@
                 <div class="review-name">Шаронов Евгений Леопольдович</div>
 
               </div>
-              <a href="img/case/А41-67959.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="img/case/А41-67959.pdf" download target="_blank" rel="noopener noreferrer">
                 <img src="img/icons/icons8-link.svg" alt=""></a>
             </div>
             <div class="review-subtitle">Долг до обращения к нам</div>
@@ -405,40 +489,15 @@
               </div>
               <img src="img/check_circle_outline_black_36dp.svg" alt="done">
             </div>
-            <div class="review-text rev">Выражаю благодарность всем юристам компании "Банкрот Бутик" за помощь в списании долгов и добросовестно выполненную работу. Сумма у меня не маленькая, а для нашей семьи она оказалась вообще непосильной ношей. Ситуация оказалось немного не стандартной, но вы, как профессионалы своего дела все сложные вопросы решили сразу. Теперь мы живем свободно от долгов. Своим знакомым, которые оказались в подобной ситуации я уже посоветовал вашу компанию. Спасибо! </div>
+            <div class="review-text rev">Выражаю благодарность всем юристам компании "Арс Банкрот" за помощь в списании
+              долгов и добросовестно выполненную работу. Сумма у меня не маленькая, а для нашей семьи она оказалась
+              вообще непосильной ношей. Ситуация оказалось немного не стандартной, но вы, как профессионалы своего дела
+              все сложные вопросы решили сразу. Теперь мы живем свободно от долгов. Своим знакомым, которые оказались в
+              подобной ситуации я уже посоветовал вашу компанию. Спасибо! </div>
 
           </div>
 
-          <div class="review">
-            <div class="review-result-zipper">
-              <div class="review-results">
-                <div class="review-name">Ле Куинь Нган</div>
 
-              </div>
-              <a href="img/case/А40-2559432017.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="img/icons/icons8-link.svg" alt=""></a>
-            </div>
-            <div class="review-subtitle">Долг до обращения к нам</div>
-            <div class="review-text">66 609 480.82 РУБЛЕЙ</div>
-            <div class="review-subtitle">Суд определил:</div>
-            <div class="review-text">Завершить процедуру реализации имущества должника Ле Куинь Нган полным списанием
-              долга</div>
-            <div class="review-subtitle">Номер дела</div>
-            <div class="review-text">А40-255943/2017</div>
-
-            <div class="review-subtitle">Список кредиторов</div>
-            <div class="review-text">ООО "ЛИОН КИНГ"</div>
-            <div class="review-result-zipper">
-              <div class="review-results">
-                <div class="review-subtitle">Результат нашей работы</div>
-                <div class="review-result">ПОЛНОЕ СПИСАНИЕ ДОЛГА</div>
-              </div>
-              <img src="img/check_circle_outline_black_36dp.svg" alt="done">
-            </div>
-            <div class="review-text rev">Хочу выразить огромную благодарность команде грамотных юристов, за процедуру признания банкротом.
-              Несколько лет мой бизнес процветал, но кризисная ситуация настигла врасплох, с огромной суммой по кредитом наша семья никак не справлялась, подруга рассказала про закон о банкротстве и посоветовала ваших юристов. За несколько месяцев вся сумма долга была списана судом под ноль! Большое спасибо, вы спасли мою семью в такой тяжелой ситуации. Юристы замечательные, работают быстро и, что главное, качественно! Советую не бояться тем, кто оказался в кризисной ситуации такого слова, как "банкротство", эта процедура- спасение от финансовой ямы.</div>
-
-          </div>
         </div>
       </div>
     </section>
@@ -447,10 +506,10 @@
         <h1 class="h1">Банкротство физических лиц с гарантией списания долга (Законное освобождение от долгов)</h1>
         <p class="about-text">Команда профессиональных юристов поможет решить ваши проблемы с кредиторами</p>
         <p class="law-descr">Оставьте заявку и все звонки коллекторов прекратятся</p>
-        <a href="#" class="about-btn">Получить бесплатную консультацию</a>
+        <button class="about-btn">Получить бесплатную консультацию</button>
       </div>
     </section>
-    <section class="questions">
+    <section id="questions" class="questions">
       <div class="container">
         <h2 class="section-heading">Часто задаваемые вопросы</h2>
         <div class="question-list">
@@ -459,7 +518,7 @@
             <p>Банкротство - это законная процедура, благодаря которой, каждый человек или компания могут избавиться от
               долгов.</p>
           </div>
-          <button class="accordion">Сделки с имуществом должника в процедуре Банкротства физического лица?Основания для
+          <button class="accordion">Сделки с имуществом должника в процедуре Банкротства физического лица? Основания для
             оспаривания.</button>
           <div class="panel">
             <p>Специальные основания:
@@ -602,10 +661,10 @@
         <h2 class="section-heading">Контакты</h2>
         <div class="contacts-zipper">
           <div class="contacts-descr">
-            <div class="contacts-title">Для получения бесплатной консультации и анализу Вашей ситуации по процедуре
-              банкротства вы можете обратиться к нам в офис по адресу</div>
+            <div class="contacts-title">Для получения бесплатной консультации и анализа Вашей ситуации по процедуре
+              банкротства Вы можете обратиться к нам в офис по адресу</div>
             <div class="contacts-line"></div>
-            <div class="adress">ул. Льва Толстого, д. 19/2, офис 32
+            <div class="adress">г. Москва, ул. Льва Толстого, д. 19/2, офис 32
               метро «Парк Культуры», «Фрунзенская»</div>
             <div class="contacts-phone">+7(800)444-15-46</div>
           </div>
@@ -623,28 +682,65 @@
       <div class="links-menu">
         <div class="links-title">О компании</div>
         <a href="#" class="footer-link"></a>
-        <a href="#" class="footer-link">Отзывы</a>
-        <a href="#" class="footer-link">Контакты</a>
+        <a href="#results" class="footer-link">Отзывы</a>
+        <a href="#contacts" class="footer-link">Контакты</a>
+        <a class="footer-link" href="/login.php">Авторизация</a>
+
         <div class="copyright">Все права защищены</div>
       </div>
 
       <div class="links-menu">
         <div class="links-title">Услуги</div>
-        <a href="#" class="footer-link">Банкротство физических лиц</a>
-        <a href="#" class="footer-link">Принудительное банкротство</a>
+        <a href="index.html" class="footer-link">Банкротство физических лиц</a>
+        <a href="prinuditelnoe.php" class="footer-link">Принудительное банкротство</a>
 
       </div>
 
       <div class="links-menu">
         <div class="links-title">Мы в соцсетях</div>
-        <a href="#" class="footer-link">Вконтакте</a>
+        <a href="https://vk.com/arsbankrot" class="footer-link">Вконтакте</a>
         <a href="#" class="footer-link">Instagram</a>
       </div>
     </div>
   </footer>
+  <script>
+    // Отправка данных на сервер
+    function send(event, php) {
+      console.log("Отправка запроса");
+      event.preventDefault ? event.preventDefault() : event.returnValue = false;
+      var req = new XMLHttpRequest();
+      req.open('POST', php, true);
+      req.onload = function () {
+        if (req.status >= 200 && req.status < 400) {
+          json = JSON.parse(this.response); // Ебанный internet explorer 11
+          console.log(json);
+
+          // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+          if (json.result == "success") {
+            // Если сообщение отправлено
+            alert("Сообщение отправлено");
+          } else {
+            // Если произошла ошибка
+            alert("Ошибка. Сообщение не отправлено");
+          }
+          // Если не удалось связаться с php файлом
+        } else {
+          alert("Ошибка сервера. Номер: " + req.status);
+        }
+      };
+
+      // Если не удалось отправить запрос. Стоит блок на хостинге
+      req.onerror = function () {
+        alert("Ошибка отправки запроса");
+      };
+      req.send(new FormData(event.target));
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
+  <script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=6755342139792738">
+  </script>
 </body>
 
 </html>

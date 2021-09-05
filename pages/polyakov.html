@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <title>Банкрот Бутик</title>
+  <title>Арс Банкрот</title>
 </head>
 
 <body>
@@ -31,11 +32,11 @@
           <nav class="nav">
             <ul class="nav-list">
               
-              <li class="nav-item"><a href="#" class="nav-link">Банкротство</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Принудительное банкротство</a></li>
+              <li class="nav-item"><a href="../index.html" class="nav-link">Банкротство</a></li>
+              <li class="nav-item"><a href="../prinuditelnoe.php" class="nav-link">Принудительное банкротство</a></li>
               <li class="nav-item"><a href="../team.html" class="nav-link">О нас</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Полезная информация</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+              <li class="nav-item"><a href="../info.html" class="nav-link">Полезная информация</a></li>
+              <li class="nav-item"><a href="../index.html#contacts" class="nav-link">Контакты</a></li>
             </ul>
           </nav>
           <button class="subheader-btn">Заказать звонок <br> <span>+7(800)444-15-46</span></button>
@@ -58,6 +59,22 @@
         </button>
       </div>
       <div class="burger-overlay"></div>
+      
+      <div class="custom-model-main">
+        <div class="custom-model-inner">
+          <div class="close-btn">×</div>
+          <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <form class="popup" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <input class="input" type="text" name="name" placeholder="Ваше имя">
+                <input class="input" type="text" name="email" placeholder="Номер телефона">
+                <input class="input-btn popup-btn" value="Получить консультацию" type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bg-overlay"></div>
+      </div>
 
     </div>
   </header>
@@ -67,7 +84,7 @@
       <div class="container">
         <h1 class="expert-title">Поляков Дмитрий</h1>
         <div class="expert-container">
-          <img src="../img/DSC_5586.jpg" alt="" class="expert-img">
+          <img src="../img/portets/crop/SHI_9065.jpg" alt="" class="expert-img">
           <div class="expert-descr">
             <div class="position">Арбитражный управляющий</div>
             <div class="expert-subtitle">Образование:</div>
@@ -92,21 +109,21 @@
       <div class="links-menu">
         <div class="links-title">О компании</div>
         <a href="#" class="footer-link"></a>
-        <a href="#" class="footer-link">Отзывы</a>
-        <a href="#" class="footer-link">Контакты</a>
+        <a href="../index.html#results" class="footer-link">Отзывы</a>
+        <a href="../index.html#contacts" class="footer-link">Контакты</a>
         <div class="copyright">Все права защищены</div>
       </div>
 
       <div class="links-menu">
         <div class="links-title">Услуги</div>
-        <a href="#" class="footer-link">Банкротство физических лиц</a>
-        <a href="#" class="footer-link">Принудительное банкротство</a>
+        <a href="../index.html" class="footer-link">Банкротство физических лиц</a>
+        <a href="../prinuditelnoe.php" class="footer-link">Принудительное банкротство</a>
 
       </div>
 
       <div class="links-menu">
         <div class="links-title">Мы в соцсетях</div>
-        <a href="#" class="footer-link">Вконтакте</a>
+        <a href="https://vk.com/arsbankrot" class="footer-link">Вконтакте</a>
         <a href="#" class="footer-link">Instagram</a>
       </div>
     </div>
